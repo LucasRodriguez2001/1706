@@ -1,0 +1,766 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@200&family=Montserrat:wght@100;300;900&family=Roboto:wght@100;300;500;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =================== INDEX =================== */
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar {
+    background-color: #120907;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    align-items: center;
+    border-radius: 5px;
+    border-color: grey;
+    border-style: solid;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+}
+
+.navbar .logo {
+    width: 60px;
+    height: 60px;
+    grid-column: 2/3;
+}
+
+.navbar .menu {
+    grid-column: 4/7;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar .menu li {
+    list-style: none;
+}
+
+.navbar .menu a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+.navbar .menu a:hover {
+    color: #ffcc55;
+    transition: all 0.7s;
+}
+
+.navbar .wpp {
+    width: 35px;
+    height: 35px;
+    grid-column: 8/9;
+}
+
+/* --------------- Main Section --------------- */
+
+.hero {
+    height: 90vh;
+    background-image: url(images/imagen.jpg);
+    background-size: cover;
+    filter: blur(1.5px);
+    transition: all 0.7s;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+}
+
+.hero:hover{
+    transform: scale(1.00);
+    transition: all 0.7s;
+    filter: blur(0px);
+}
+
+.hero .info-content {
+    grid-column: 7/10;
+    grid-row: 2/6;
+    color: aliceblue;
+    text-align: center;
+}
+
+.hero h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3em;
+    font-weight: 700;
+}
+
+.hero h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2em;
+    font-weight: 300;
+}
+
+/* =================== HERRAMIENTAS =================== */
+
+.contenedor-tools {
+    background-color: #d8deed;
+    max-width: 100%;
+    height: 90vh;
+    display: grid;
+    grid-template-rows: repeat(8, 1fr);
+}
+
+.contenedor-tools h2 {
+    text-align: center;
+}
+
+.contenedor-tools .programas {
+    display: flex;
+    grid-row: 2/3;
+    justify-self: center;
+}
+
+.contenedor-tools .lenguajes {
+    display: flex;
+    grid-row: 4/5;
+    justify-self: center;
+}
+
+.contenedor-tools h3 {
+    text-align: center;
+    grid-row: 4/5;
+}
+
+.contenedor-tools .lenguajes {
+    grid-row: 5/6;
+}
+
+.contenedor-tools .lenguajes ul {
+    display: flex;
+}
+
+.contenedor-tools .lenguajes li {
+    list-style: none;
+    padding: 10px;
+}
+
+/* =================== SOLICITUD =================== */
+
+.contenedor-solicitud {
+    /* background-image: url(images/fondoweb.png); */
+    background-size: cover;
+    background-color: #d8deed;
+    height: 100%;
+    max-width: 100%;
+    padding: 20px 20px 20px 20px;
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+}
+
+section h2 {
+    background-color: #999cd2;
+    text-align: center;
+}
+
+.contenedor-solicitud .correo {
+    display: flex;
+    grid-row: 1/2;
+}
+
+.contenedor-solicitud .correo p {
+    padding: 40px 20px 40px 20px;
+    border-bottom-style: solid;
+}
+
+.contenedor-solicitud .idea {
+    display: flex;
+    grid-row: 2/3;
+}
+
+.contenedor-solicitud .idea p {
+    padding: 40px 20px 40px 20px;
+    border-bottom-style: solid;
+}
+
+.contenedor-solicitud .reloj {
+    display: flex;
+    grid-row: 3/4;
+}
+
+.contenedor-solicitud .reloj p {
+    padding: 40px 20px 40px 20px;
+    border-bottom-style: solid;
+}
+
+.contenedor-solicitud .entrega {
+    display: flex;
+    grid-row: 4/5;
+}
+
+.contenedor-solicitud .entrega p {
+    padding: 40px 20px 40px 20px;
+    border-bottom-style: solid;
+}
+
+.contenedor-solicitud .dinero {
+    display: flex;
+    grid-row: 5/6;
+}
+
+.contenedor-solicitud .dinero p {
+    padding: 40px 20px 40px 20px;
+}
+
+/* =================== INFO =================== */
+
+.infoBG{
+    background-color: #d8deed;
+    color: #120907;
+}
+
+.informacion{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    grid-column: 1/4;
+}
+
+.informacion h3 {
+    font-family: 'Roboto', sans-serif;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.informacion h4 {
+    font-family: 'Roboto', sans-serif;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.contenedor-info {
+    background-size: cover;
+    display: grid;
+    max-width: 100%;
+    height: 90vh;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.informacion img {
+    border-style: solid;
+    border-radius: 10px;
+    border-color: #231e2f;
+    width: 200px;
+    height: 260px;
+    margin-top: 15px;
+    box-shadow: 7px 13px 37px #000;
+}
+
+.informacion iframe {
+    border-radius: 30px;
+    border-style: solid;
+    border-color: #000;
+    box-shadow: 7px 13px 20px #000;
+}
+
+.button {
+    cursor: pointer;
+}
+
+/* =================== CONTACTO =================== */
+
+.formulario {
+    height: 90vh;
+    max-width: 100%;
+    display: grid;
+    background-color: #d8deed;
+}
+
+.contactoBG{
+    background-color: #d8deed;
+}
+
+.form-register{
+    width: 400px;
+    height: 670px;
+    background-color: hsl(229, 20%, 17%);
+    padding: 10px 30px 10px 30px;
+    margin: auto;
+    border-radius: 25px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.form-register label{
+    font-family: 'Roboto', sans-serif;
+    font-style: initial;
+    color: rgb(255, 255, 255);
+    padding: 2px;
+}
+
+.form-register .button{
+    width: 100%;
+    background: #1f53c5;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+}
+
+.form-register h4{
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.form-register textarea {
+    width: 340px;
+    height: 150px;
+    resize: none;
+}
+
+.controls{
+    width: 100%;
+    background: #1a1a1a;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #1f53c5;
+    font-family: 'Roboto', sans-serif;
+    color: aliceblue;
+    font-size: 18px;
+}
+
+
+
+/* =================== FOOTER =================== */
+
+footer{
+    background-color: #231e2f;
+    text-align: center;
+    color: aliceblue;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    display: grid;
+    height: 40px;
+}
+
+
+/* =================== MEDIA QUERY 320 PX =================== */
+
+/* Index */
+@media only screen and (min-width:320px) and (max-width:479px) {
+    .navbar {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    .navbar .logo {
+        width: 60px;
+        height: 60px;
+        grid-column: 1/2;
+        grid-row: 1/3;
+        justify-self: center;
+    }
+    .navbar .menu {
+        grid-column: 2/4;
+        grid-row: 1/3;
+        display: block;
+        justify-content: space-around;
+        text-align: center;
+        font-weight: 300;
+    }
+    .hero .info-content {
+        grid-column: 2/8;
+        grid-row: 2/6;
+        color: aliceblue;
+        text-align: center;
+    }
+    .hero {
+        filter: blur(0px);
+    }
+    .hero h1{
+        font-size: 2em;
+    }
+    
+    /* Contacto */
+    .form-register {
+        width: 300px;
+        height: 680px;
+    }
+    .form-register textarea {
+        width: 240px;
+        height: 150px;
+        resize: none;
+    }
+    .navbar .wpp {
+        width: 35px;
+        height: 35px;
+        grid-column: 4/5;
+        grid-row: 1/3;
+        justify-self: center;
+    }
+    .formulario {
+        height: 100%;
+    }
+    /* Info */
+    .informacion iframe {
+        width: auto;
+        height: 400px;
+    }
+    .contenedor-info {
+        height: 100%;
+    }
+}
+
+/* =================== MEDIA QUERY 480 PX =================== */
+
+@media only screen and (min-width:480px) and (max-width:599px) {
+    .navbar {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(1, 1fr)
+    }
+    .navbar .logo {
+        width: 60px;
+        height: 60px;
+        grid-column: 1/2;
+        grid-row: 1/2;
+        justify-self: center;
+    }
+    .navbar .menu {
+        grid-column: 2/5;
+        grid-row: 1/2;
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        font-weight: 300;
+        font-size: 12px;
+    }
+    .hero .info-content {
+        grid-column: 2/8;
+        grid-row: 2/6;
+        color: aliceblue;
+        text-align: center;
+    }
+    .hero {
+        filter: blur(0px);
+    }
+    .hero h1{
+        font-size: 2em;
+    }
+    
+    /* Contacto */
+    .form-register textarea {
+        width: 340px;
+        height: 150px;
+        resize: none;
+    }
+    .navbar .wpp {
+        width: 25px;
+        height: 25px;
+        grid-column: 5/6;
+        grid-row: 1/3;
+        justify-self: center;
+    }
+    .formulario {
+        height: 100%;
+    }
+    
+    /* Info */
+    .informacion iframe {
+        width: auto;
+        height: 400px;
+    }
+    .contenedor-info {
+        height: 100%;
+    }
+}
+
+/* =================== MEDIA QUERY 600 PX =================== */
+
+@media only screen and (min-width:600px) and (max-width:767px) {
+    .navbar {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(1, 1fr)
+    }
+    .navbar .logo {
+        width: 60px;
+        height: 60px;
+        grid-column: 1/2;
+        grid-row: 1/2;
+        justify-self: center;
+    }
+    .navbar .menu {
+        grid-column: 2/5;
+        grid-row: 1/2;
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        font-weight: 300;
+    }
+    .hero .info-content {
+        grid-column: 2/8;
+        grid-row: 2/6;
+        color: aliceblue;
+        text-align: center;
+    }
+    .hero {
+        filter: blur(0px);
+    }
+    .hero h1{
+        font-size: 2em;
+    }
+
+    /* Contacto */
+    .form-register textarea {
+        width: 340px;
+        height: 150px;
+        resize: none;
+    }
+    
+    /* Info */
+    .contenedor-info {
+        height: 100%;
+    }
+}
+
+/* =================== MEDIA QUERY 768 PX =================== */
+
+@media only screen and (min-width:768px) and (max-width:1023px) {
+    .navbar {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(1, 1fr)
+    }
+    .navbar .logo {
+        width: 60px;
+        height: 60px;
+        grid-column: 1/2;
+        grid-row: 1/2;
+        justify-self: center;
+    }
+    .navbar .menu {
+        grid-column: 2/4;
+        grid-row: 1/2;
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+    }
+    .hero .info-content {
+        grid-column: 7/10;
+        grid-row: 2/6;
+        color: aliceblue;
+        text-align: center;
+    }
+    .hero {
+        filter: blur(0px);
+    }
+    .hero h1{
+        font-size: 2em;
+    }
+
+    /* Contacto */
+    .form-register textarea {
+        width: 340px;
+        height: 150px;
+        resize: none;
+    }
+    .navbar .wpp {
+        width: 35px;
+        height: 35px;
+        grid-column: 4/5;
+        justify-self: center;
+    }
+
+    /* Info */
+    .contenedor-info {
+        height: 100%;
+    }
+}
+
+/* =================== MEDIA QUERY 1280x720 =================== */
+
+@media only screen and (width:1280px) and (height:720px) {
+    .navbar {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(1, 1fr)
+    }
+    .navbar .logo {
+        width: 60px;
+        height: 60px;
+        grid-column: 1/2;
+        grid-row: 1/2;
+        justify-self: center;
+    }
+    .navbar .menu {
+        grid-column: 2/4;
+        grid-row: 1/2;
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+    }
+    .hero .info-content {
+        grid-column: 7/10;
+        grid-row: 2/6;
+        color: aliceblue;
+        text-align: center;
+    }
+    .hero h1{
+        font-size: 2em;
+    }
+
+    /* Contacto */
+    .form-register textarea {
+        width: 340px;
+        height: 150px;
+        resize: none;
+    }
+    .formulario {
+        height: 100vh;
+        max-width: 100%;
+        display: grid;
+    }
+    .navbar .wpp {
+        width: 35px;
+        height: 35px;
+        grid-column: 4/5;
+        justify-self: center;
+    }
+
+    /* Info */
+    .contenedor-info {
+        display: grid;
+        max-width: 100%;
+        height: 100%;
+    }
+
+}
+
+/* =================== MEDIA QUERY +1024 =================== */
+
+@media only screen and (min-width:1024px) {
+    .navbar {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(1, 1fr)
+    }
+    .navbar .logo {
+        width: 60px;
+        height: 60px;
+        grid-column: 1/2;
+        grid-row: 1/2;
+        justify-self: center;
+    }
+    .navbar .menu {
+        grid-column: 2/4;
+        grid-row: 1/2;
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+    }
+    .hero .info-content {
+        grid-column: 7/10;
+        grid-row: 2/6;
+        color: aliceblue;
+        text-align: center;
+    }
+    .hero h1{
+        font-size: 2em;
+    }
+
+    /* Contacto */
+    .form-register textarea {
+        width: 340px;
+        height: 150px;
+        resize: none;
+    }
+    .formulario {
+        height: 100vh;
+        max-width: 100%;
+        display: grid;
+    }
+    .navbar .wpp {
+        width: 35px;
+        height: 35px;
+        grid-column: 4/5;
+        justify-self: center;
+    }
+
+    /* Info */
+    .contenedor-info {
+        display: grid;
+        max-width: 100%;
+        height: 100%;
+    }
+
+}
+
+/* =================== MEDIA QUERY 1920x1080 =================== */
+
+@media only screen and (width:1920px) and (height:1080px) {
+    .navbar {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(1, 1fr)
+    }
+    .navbar .logo {
+        width: 60px;
+        height: 60px;
+        grid-column: 1/2;
+        grid-row: 1/2;
+        justify-self: center;
+    }
+    .navbar .menu {
+        grid-column: 2/4;
+        grid-row: 1/2;
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+    }
+    .hero {
+        height: 91vh;
+    }
+    .hero .info-content {
+        grid-column: 7/10;
+        grid-row: 2/6;
+        color: aliceblue;
+        text-align: center;
+    }
+    .hero h1{
+        font-size: 2em;
+    }
+
+    /* Herramientas */
+    .contenedor-tools {
+        height: 91vh;
+    }
+
+    /* Contacto */
+    .form-register textarea {
+        width: 340px;
+        height: 150px;
+        resize: none;
+    }
+    .formulario {
+        height: 91vh;
+        max-width: 100%;
+        display: grid;
+    }
+    .navbar .wpp {
+        width: 35px;
+        height: 35px;
+        grid-column: 4/5;
+        justify-self: center;
+    }
+
+    /* Info */
+    .contenedor-info {
+        display: grid;
+        max-width: 100%;
+        height: 91vh;
+    }
+
+}

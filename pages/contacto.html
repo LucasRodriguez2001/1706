@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/estilos.css">
+    <link rel="icon" href="/images/LR.ico">
+    <title>Contacto</title>
+</head>
+<body class="contactoBG">
+    <header>  
+        <nav class="navbar">
+            <img src="/images/LR.png" class="logo" alt="Lucas Rodriguez Logo">
+            <ul class="menu">
+                <li><a href="/index.html">INICIO</a></li>
+                <li><a href="herramientas.html">HERRAMIENTAS</a></li>
+                <li><a href="solicitud.html">SOLICITUD</a></li>
+                <li><a href="info.html">INFO</a></li>
+                <li><a href="#">CONTACTO</a></li>
+            </ul>
+            <a class="wpp" href="https://wa.me/+59894417048"><img class="wpp" src="/images/whatsapp.png"></a>
+        </nav>       
+    </header>
+    <main class="formulario">
+        <section class="form-register">
+            <form action="enviar.php" method="post" enctype="text/plain">
+                <h4>CONTACTAME</h4>
+                <input class="controls" type="text" name="nombre" id="nombre" placeholder="Ingresa tu nombre" required>
+                <input class="controls" type="text" name="apellido" id="apellido" placeholder="Ingresa tu apellido" required>
+                <input class="controls" type="number" name="telefono" id="telefono" placeholder="Ingresa tu telefono">
+                <input class="controls" type="email" name="email" id="email" placeholder="Ingresa tu email" required>
+                
+                <label for="">Masculino</label>
+                <input class="radio" type="radio" name="sexo"><br>
+                <label for="">Femenino</label>
+                <input class="radio" type="radio" name="sexo"><br>
+                <label for="">Otro</label>
+                <input class="radio" type="radio" name="sexo"><br><br><br>
+                
+                <label for="">Comentarios</label><br>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Escribe tu comentario"></textarea><br>
+                <input class="check" type="checkbox" name="terminos" required>
+                <label for="">Acepto los terminos y condiciones...</label><br>
+                <input class="button" type="submit" value="Enviar">
+            </form>
+        </section>
+    </main>          
+    <footer>        
+            Derechos reservados por Lucas Rodriguez®
+    </footer>
+</body>
+</html>
