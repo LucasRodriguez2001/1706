@@ -11,53 +11,47 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    position: relative;
+    padding-bottom: 45px;
 }
 
-.navbar {
-    background-color: #120907;
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    align-items: center;
-    border-radius: 5px;
-    border-color: grey;
-    border-style: solid;
-    border-top: 0;
-    border-left: 0;
-    border-right: 0;
-}
-
-.navbar .logo {
-    width: 60px;
-    height: 60px;
-    grid-column: 2/3;
-}
-
-.navbar .menu {
-    grid-column: 4/7;
+header {
     display: flex;
-    justify-content: space-around;
+    min-height: 70px;
+    height: 70px;
+    background-color: #120907;
+    justify-content:space-around;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    border-bottom: solid;
+    border-bottom-color: yellow;
 }
 
-.navbar .menu li {
-    list-style: none;
+.logo img {
+    height: 60px;
+    width: 60px;
+    margin-right: 40px;
 }
 
-.navbar .menu a {
+nav a {
+    font-weight: 600;
+    padding-right: 30px;
+    color: aliceblue;
     text-decoration: none;
-    color: white;
-    cursor: pointer;
+    font-weight: 400;
 }
 
-.navbar .menu a:hover {
-    color: #ffcc55;
-    transition: all 0.7s;
+a:hover {
+    transition: all 0.5s;
+    color: yellow;
 }
 
-.navbar .wpp {
+.wpp {
     width: 35px;
     height: 35px;
     grid-column: 8/9;
-}
+} 
 
 /* --------------- Main Section --------------- */
 
@@ -144,9 +138,8 @@ body {
 
 /* =================== SOLICITUD =================== */
 
+
 .contenedor-solicitud {
-    /* background-image: url(images/fondoweb.png); */
-    background-size: cover;
     background-color: #d8deed;
     height: 100%;
     max-width: 100%;
@@ -214,6 +207,8 @@ section h2 {
 .infoBG{
     background-color: #d8deed;
     color: #120907;
+    position: relative;
+    padding-bottom: 45px;
 }
 
 .informacion{
@@ -235,10 +230,9 @@ section h2 {
 }
 
 .contenedor-info {
-    background-size: cover;
     display: grid;
     max-width: 100%;
-    height: 90vh;
+    height: 80vh;
     grid-template-columns: repeat(3, 1fr);
 }
 
@@ -266,7 +260,7 @@ section h2 {
 /* =================== CONTACTO =================== */
 
 .formulario {
-    height: 90vh;
+    height: 80vh;
     max-width: 100%;
     display: grid;
     background-color: #d8deed;
@@ -335,40 +329,29 @@ section h2 {
 /* =================== FOOTER =================== */
 
 footer{
-    background-color: #231e2f;
+    background-color: #120907;
     text-align: center;
     color: aliceblue;
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
     font-weight: 300;
-    display: grid;
-    height: 40px;
+    padding: 1em 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 
 /* =================== MEDIA QUERY 320 PX =================== */
 
-/* Index */
+
 @media only screen and (min-width:320px) and (max-width:479px) {
-    .navbar {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(2, 1fr);
+    /* Index */
+    header{
+        height: 110px;
     }
-    .navbar .logo {
-        width: 60px;
-        height: 60px;
-        grid-column: 1/2;
-        grid-row: 1/3;
-        justify-self: center;
-    }
-    .navbar .menu {
-        grid-column: 2/4;
-        grid-row: 1/3;
+    nav a{
         display: block;
-        justify-content: space-around;
-        text-align: center;
-        font-weight: 300;
     }
     .hero .info-content {
         grid-column: 2/8;
@@ -383,6 +366,13 @@ footer{
         font-size: 2em;
     }
     
+    /* Herramientas */
+    .contenedor-tools .programas table{
+        width: 150px;
+        height: 100px;
+        justify-self:left;
+    }
+
     /* Contacto */
     .form-register {
         width: 300px;
@@ -403,6 +393,53 @@ footer{
     .formulario {
         height: 100%;
     }
+    
+    /* Solicitud */
+    .contenedor-solicitud{
+        position: relative;
+        max-width: 100%;
+    }
+    .contenedor-solicitud .correo img {
+        width: 60px;
+        height: 60px;
+    }
+    .contenedor-solicitud .correo{
+        display: block;
+        text-align: center;
+    }
+    .contenedor-solicitud .idea img {
+        width: 60px;
+        height: 60px;
+    }
+    .contenedor-solicitud .idea{
+        display: block;
+        text-align: center;
+    }
+    .contenedor-solicitud .reloj img {
+        width: 60px;
+        height: 60px;
+    }
+    .contenedor-solicitud .reloj{
+        display: block;
+        text-align: center;
+    }
+    .contenedor-solicitud .entrega img {
+        width: 60px;
+        height: 60px;
+    }
+    .contenedor-solicitud .entrega{
+        display: block;
+        text-align: center;
+    }
+    .contenedor-solicitud .dinero img {
+        width: 60px;
+        height: 60px;
+    }
+    .contenedor-solicitud .dinero{
+        display: block;
+        text-align: center;
+    }
+
     /* Info */
     .informacion iframe {
         width: auto;
@@ -416,26 +453,12 @@ footer{
 /* =================== MEDIA QUERY 480 PX =================== */
 
 @media only screen and (min-width:480px) and (max-width:599px) {
-    .navbar {
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        grid-template-rows: repeat(1, 1fr)
+    /* Index */
+    header{
+        height: 110px;
     }
-    .navbar .logo {
-        width: 60px;
-        height: 60px;
-        grid-column: 1/2;
-        grid-row: 1/2;
-        justify-self: center;
-    }
-    .navbar .menu {
-        grid-column: 2/5;
-        grid-row: 1/2;
-        display: flex;
-        justify-content: space-around;
-        text-align: center;
-        font-weight: 300;
-        font-size: 12px;
+    nav a{
+        display: block;
     }
     .hero .info-content {
         grid-column: 2/8;
@@ -449,7 +472,53 @@ footer{
     .hero h1{
         font-size: 2em;
     }
-    
+    /* Solicitud */
+    .contenedor-solicitud{
+        position: relative;
+        max-width: 100%;
+    }
+    .contenedor-solicitud .correo img {
+        width: 60px;
+        height: 60px;
+    }
+    .contenedor-solicitud .correo{
+        display: block;
+        text-align: center;
+    }
+    .contenedor-solicitud .idea img {
+        width: 60px;
+        height: 60px;
+    }
+    .contenedor-solicitud .idea{
+        display: block;
+        text-align: center;
+    }
+    .contenedor-solicitud .reloj img {
+        width: 60px;
+        height: 60px;
+    }
+    .contenedor-solicitud .reloj{
+        display: block;
+        text-align: center;
+    }
+    .contenedor-solicitud .entrega img {
+        width: 60px;
+        height: 60px;
+    }
+    .contenedor-solicitud .entrega{
+        display: block;
+        text-align: center;
+    }
+    .contenedor-solicitud .dinero img {
+        width: 60px;
+        height: 60px;
+    }
+    .contenedor-solicitud .dinero{
+        display: block;
+        text-align: center;
+    }
+
+
     /* Contacto */
     .form-register textarea {
         width: 340px;
@@ -480,28 +549,11 @@ footer{
 /* =================== MEDIA QUERY 600 PX =================== */
 
 @media only screen and (min-width:600px) and (max-width:767px) {
-    .navbar {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(1, 1fr)
-    }
-    .navbar .logo {
-        width: 60px;
-        height: 60px;
-        grid-column: 1/2;
-        grid-row: 1/2;
-        justify-self: center;
-    }
-    .navbar .menu {
-        grid-column: 2/5;
-        grid-row: 1/2;
-        display: flex;
-        justify-content: space-around;
-        text-align: center;
-        font-weight: 300;
+    nav a{
+        padding: 4px;
     }
     .hero .info-content {
-        grid-column: 2/8;
+        grid-column: 3/8;
         grid-row: 2/6;
         color: aliceblue;
         text-align: center;
@@ -529,25 +581,7 @@ footer{
 /* =================== MEDIA QUERY 768 PX =================== */
 
 @media only screen and (min-width:768px) and (max-width:1023px) {
-    .navbar {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(1, 1fr)
-    }
-    .navbar .logo {
-        width: 60px;
-        height: 60px;
-        grid-column: 1/2;
-        grid-row: 1/2;
-        justify-self: center;
-    }
-    .navbar .menu {
-        grid-column: 2/4;
-        grid-row: 1/2;
-        display: flex;
-        justify-content: space-around;
-        text-align: center;
-    }
+    
     .hero .info-content {
         grid-column: 7/10;
         grid-row: 2/6;
@@ -583,25 +617,7 @@ footer{
 /* =================== MEDIA QUERY 1280x720 =================== */
 
 @media only screen and (width:1280px) and (height:720px) {
-    .navbar {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(1, 1fr)
-    }
-    .navbar .logo {
-        width: 60px;
-        height: 60px;
-        grid-column: 1/2;
-        grid-row: 1/2;
-        justify-self: center;
-    }
-    .navbar .menu {
-        grid-column: 2/4;
-        grid-row: 1/2;
-        display: flex;
-        justify-content: space-around;
-        text-align: center;
-    }
+    
     .hero .info-content {
         grid-column: 7/10;
         grid-row: 2/6;
@@ -623,7 +639,7 @@ footer{
         max-width: 100%;
         display: grid;
     }
-    .navbar .wpp {
+    .wpp {
         width: 35px;
         height: 35px;
         grid-column: 4/5;
@@ -642,25 +658,7 @@ footer{
 /* =================== MEDIA QUERY +1024 =================== */
 
 @media only screen and (min-width:1024px) {
-    .navbar {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(1, 1fr)
-    }
-    .navbar .logo {
-        width: 60px;
-        height: 60px;
-        grid-column: 1/2;
-        grid-row: 1/2;
-        justify-self: center;
-    }
-    .navbar .menu {
-        grid-column: 2/4;
-        grid-row: 1/2;
-        display: flex;
-        justify-content: space-around;
-        text-align: center;
-    }
+    
     .hero .info-content {
         grid-column: 7/10;
         grid-row: 2/6;
@@ -682,7 +680,7 @@ footer{
         max-width: 100%;
         display: grid;
     }
-    .navbar .wpp {
+    .wpp {
         width: 35px;
         height: 35px;
         grid-column: 4/5;
@@ -694,73 +692,6 @@ footer{
         display: grid;
         max-width: 100%;
         height: 100%;
-    }
-
-}
-
-/* =================== MEDIA QUERY 1920x1080 =================== */
-
-@media only screen and (width:1920px) and (height:1080px) {
-    .navbar {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(1, 1fr)
-    }
-    .navbar .logo {
-        width: 60px;
-        height: 60px;
-        grid-column: 1/2;
-        grid-row: 1/2;
-        justify-self: center;
-    }
-    .navbar .menu {
-        grid-column: 2/4;
-        grid-row: 1/2;
-        display: flex;
-        justify-content: space-around;
-        text-align: center;
-    }
-    .hero {
-        height: 91vh;
-    }
-    .hero .info-content {
-        grid-column: 7/10;
-        grid-row: 2/6;
-        color: aliceblue;
-        text-align: center;
-    }
-    .hero h1{
-        font-size: 2em;
-    }
-
-    /* Herramientas */
-    .contenedor-tools {
-        height: 91vh;
-    }
-
-    /* Contacto */
-    .form-register textarea {
-        width: 340px;
-        height: 150px;
-        resize: none;
-    }
-    .formulario {
-        height: 91vh;
-        max-width: 100%;
-        display: grid;
-    }
-    .navbar .wpp {
-        width: 35px;
-        height: 35px;
-        grid-column: 4/5;
-        justify-self: center;
-    }
-
-    /* Info */
-    .contenedor-info {
-        display: grid;
-        max-width: 100%;
-        height: 91vh;
     }
 
 }
