@@ -32,6 +32,13 @@ header {
     height: 60px;
     width: 60px;
     margin-right: 40px;
+    transition: all 1s;
+}
+.logo img:hover{
+    transition: all 1s;
+    width: 65px;
+    height: 65px;
+    filter:saturate(200%);
 }
 
 nav a {
@@ -45,13 +52,21 @@ nav a {
 a:hover {
     transition: all 0.5s;
     color: yellow;
+    font-size: 18px;
 }
 
 .wpp {
     width: 35px;
     height: 35px;
     grid-column: 8/9;
-} 
+    transition: all 1s;
+}
+
+.wpp:hover {
+    width: 40px;
+    height: 40px;
+    transition: all 1s;
+}
 
 /* --------------- Main Section --------------- */
 
