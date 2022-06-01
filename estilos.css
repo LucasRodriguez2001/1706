@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@200&family=Montserrat:wght@100;300;900&family=Roboto:wght@100;300;500;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@200&family=Montserrat:wght@100;300;500;900&family=Roboto:wght@100;300;500;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 *{
@@ -6,7 +6,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+body{
+    background-color: #d8deed;
+}
 /* =================== INDEX =================== */
 
 body {
@@ -14,260 +16,189 @@ body {
     position: relative;
     padding-bottom: 45px;
 }
-
-header {
-    display: flex;
-    min-height: 70px;
-    height: 70px;
+.fondo-nav{
     background-color: #120907;
-    justify-content:space-around;
-    align-items: center;
-    text-align: center;
-    padding: 20px;
-    border-bottom: solid;
-    border-bottom-color: yellow;
 }
-
-.logo img {
-    height: 60px;
-    width: 60px;
-    margin-right: 40px;
-    transition: all 1s;
+.navbar img{
+    width: 50px;
+    height: 50px;
+    transition: all 0.7s;
 }
-.logo img:hover{
-    transition: all 1s;
-    width: 65px;
-    height: 65px;
-    filter:saturate(200%);
+.navbar img:hover{
+    transition: all 0.7s;
+    width: 53px;
+    height: 53px;
 }
-
-nav a {
-    font-weight: 600;
-    padding-right: 30px;
-    color: aliceblue;
-    text-decoration: none;
-    font-weight: 400;
+#collapsibleNavbar{
+    justify-content: center;
 }
-
-a:hover {
-    transition: all 0.5s;
-    color: yellow;
-    font-size: 18px;
+#collapsibleNavbar .nav-link{
+    /* color: #efb810; */
+    transition: all 0.7s;
 }
-
-.wpp {
-    width: 35px;
+#collapsibleNavbar .nav-link:hover{
+    transition: all 0.7s;
+    font-size: 17px;
+    color: #efb810;
+}
+#collapsibleNavbar .wpp{
     height: 35px;
-    grid-column: 8/9;
-    transition: all 1s;
+    width: 35px;
+    margin-left: 60px;
 }
-
-.wpp:hover {
-    width: 40px;
-    height: 40px;
-    transition: all 1s;
-}
-
-/* --------------- Main Section --------------- */
-
-.hero {
-    height: 90vh;
+.index{
     background-image: url(images/imagen.jpg);
     background-size: cover;
-    filter: blur(1.5px);
-    transition: all 0.7s;
-    max-width: 100%;
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(8, 1fr);
+    height: 90vh;
 }
-
-.hero:hover{
-    transform: scale(1.00);
-    transition: all 0.7s;
-    filter: blur(0px);
-}
-
-.hero .info-content {
-    grid-column: 7/10;
-    grid-row: 2/6;
-    color: aliceblue;
+.iright{
+    margin-top: 150px;
+    color: #d8deed;
+    font-family: 'Montserrat', sans-serif;
     text-align: center;
 }
-
-.hero h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 3em;
-    font-weight: 700;
+.iright h1{
+    font-weight: 500;
 }
-
-.hero h2{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.2em;
+.iright h3{
     font-weight: 300;
+    font-size: 22px;
 }
 
 /* =================== HERRAMIENTAS =================== */
-
-.contenedor-tools {
+.programas-h2{
+    font-family: 'Montserrat', sans-serif;
+    text-shadow: 1px 1px 5px#000;
+    text-align: center;
+}
+.programas-h3{
+    font-family: 'Montserrat', sans-serif;
+    text-shadow: 1px 1px 5px#000;
+    text-align: center;
+}
+.card{
+    margin: 10px 10px 10px 10px;
+    max-height: 330px;
+    max-width: 400px;
+    align-items: center;
+    box-shadow: 2px 2px 5px #000;
+    overflow: hidden;
+    transition: all 0.7s;
+}
+.card:hover{
+    max-height: 700px;
+    max-width: 400px;
+    transition: all 0.7s;
+}
+.programas{
     background-color: #d8deed;
-    max-width: 100%;
-    height: 90vh;
-    display: grid;
-    grid-template-rows: repeat(8, 1fr);
+    width: 100%;
+    max-height: 2600px;
 }
-
-.contenedor-tools h2 {
-    text-align: center;
+.rowprog{
+    justify-content: center;
 }
-
-.contenedor-tools .programas {
-    display: flex;
-    grid-row: 2/3;
-    justify-self: center;
-}
-
-.contenedor-tools .lenguajes {
-    display: flex;
-    grid-row: 4/5;
-    justify-self: center;
-}
-
-.contenedor-tools h3 {
-    text-align: center;
-    grid-row: 4/5;
-}
-
-.contenedor-tools .lenguajes {
-    grid-row: 5/6;
-}
-
-.contenedor-tools .lenguajes ul {
-    display: flex;
-}
-
-.contenedor-tools .lenguajes li {
-    list-style: none;
-    padding: 10px;
+.card-img-top{
+    height: 270px;
+    width: 270px;
 }
 
 /* =================== SOLICITUD =================== */
 
-
-.contenedor-solicitud {
-    background-color: #d8deed;
-    height: 100%;
-    max-width: 100%;
-    padding: 20px 20px 20px 20px;
-    display: grid;
-    grid-template-rows: repeat(5, 1fr);
-}
-
-section h2 {
+.tuto {
     background-color: #999cd2;
     text-align: center;
 }
-
-.contenedor-solicitud .correo {
-    display: flex;
-    grid-row: 1/2;
+.correo{
+    border-bottom: 2px solid #000;
+    text-align: center;
 }
-
-.contenedor-solicitud .correo p {
-    padding: 40px 20px 40px 20px;
-    border-bottom-style: solid;
+.cleft img{
+    width: 300px;
+    height: 300px;
 }
-
-.contenedor-solicitud .idea {
-    display: flex;
-    grid-row: 2/3;
+.cright{
+    padding: 10px 20px 10px 10px;
+    align-self: center;
 }
-
-.contenedor-solicitud .idea p {
-    padding: 40px 20px 40px 20px;
-    border-bottom-style: solid;
+.idea{
+    border-bottom: 2px solid #000;
+    text-align: center;
 }
-
-.contenedor-solicitud .reloj {
-    display: flex;
-    grid-row: 3/4;
+.idleft img{
+    width: 300px;
+    height: 300px;
 }
-
-.contenedor-solicitud .reloj p {
-    padding: 40px 20px 40px 20px;
-    border-bottom-style: solid;
+.idright{
+    padding: 10px 20px 10px 10px;
+    align-self: center;
 }
-
-.contenedor-solicitud .entrega {
-    display: flex;
-    grid-row: 4/5;
+.reloj{
+    border-bottom: 2px solid #000;
+    text-align: center;
 }
-
-.contenedor-solicitud .entrega p {
-    padding: 40px 20px 40px 20px;
-    border-bottom-style: solid;
+.rleft img{
+    width: 300px;
+    height: 300px;
 }
-
-.contenedor-solicitud .dinero {
-    display: flex;
-    grid-row: 5/6;
+.rright{
+    padding: 10px 20px 10px 10px;
+    align-self: center;
 }
-
-.contenedor-solicitud .dinero p {
-    padding: 40px 20px 40px 20px;
+.entrega{
+    border-bottom: 2px solid #000;
+    text-align: center;
+}
+.eleft img{
+    width: 300px;
+    height: 300px;
+}
+.eright{
+    padding: 10px 20px 10px 10px;
+    align-self: center;
+}
+.dinero{
+    text-align: center;
+}
+.dleft img{
+    width: 300px;
+    height: 300px;
+}
+.dright{
+    padding: 10px 20px 10px 10px;
+    align-self: center;
 }
 
 /* =================== INFO =================== */
-
-.infoBG{
-    background-color: #d8deed;
-    color: #120907;
-    position: relative;
-    padding-bottom: 45px;
-}
-
-.informacion{
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    grid-column: 1/4;
-}
-
-.informacion h3 {
-    font-family: 'Roboto', sans-serif;
-    margin-top: 10px;
-    margin-bottom: 15px;
-}
-
-.informacion h4 {
-    font-family: 'Roboto', sans-serif;
-    margin-top: 15px;
-    margin-bottom: 5px;
-}
-
-.contenedor-info {
-    display: grid;
-    max-width: 100%;
-    height: 80vh;
-    grid-template-columns: repeat(3, 1fr);
-}
-
-.informacion img {
+#foto{
     border-style: solid;
     border-radius: 10px;
     border-color: #231e2f;
     width: 200px;
     height: 260px;
     margin-top: 15px;
+    margin-bottom: 10px;
     box-shadow: 7px 13px 37px #000;
 }
-
-.informacion iframe {
+.row-imagen{
+    text-align: center;
+}
+.row-datos{
+    text-align: center;
+}
+.row-location{
+    text-align: center;
+}
+.row-location iframe {
     border-radius: 30px;
     border-style: solid;
     border-color: #000;
     box-shadow: 7px 13px 20px #000;
+    margin-bottom: 15px;
+    max-width: 100%;
+    width: 500px;
+    height: 400px;
 }
-
 .button {
     cursor: pointer;
 }
@@ -275,19 +206,14 @@ section h2 {
 /* =================== CONTACTO =================== */
 
 .formulario {
-    height: 80vh;
+    height: 800px;
     max-width: 100%;
-    display: grid;
-    background-color: #d8deed;
-}
-
-.contactoBG{
     background-color: #d8deed;
 }
 
 .form-register{
     width: 400px;
-    height: 670px;
+    height: 770px;
     background-color: hsl(229, 20%, 17%);
     padding: 10px 30px 10px 30px;
     margin: auto;
@@ -296,9 +222,7 @@ section h2 {
     color: white;
     box-shadow: 7px 13px 37px #000;
     margin-top: 20px;
-    margin-bottom: 20px;
 }
-
 .form-register label{
     font-family: 'Roboto', sans-serif;
     font-style: initial;
@@ -344,369 +268,30 @@ section h2 {
 /* =================== FOOTER =================== */
 
 footer{
-    background-color: #120907;
-    text-align: center;
-    color: aliceblue;
-    font-family: 'Roboto', sans-serif;
-    font-size: 15px;
-    font-weight: 300;
-    padding: 1em 0;
     position: absolute;
-    bottom: 0;
     width: 100%;
 }
+/* =================== MEDIA QUERY <320 PX =================== */
 
+@media only screen and (min-width:0px) and (max-width:319px){
+body{
+    display: none;
+}  
+}
 
-/* =================== MEDIA QUERY 320 PX =================== */
+/* =================== MEDIA QUERY 430 PX =================== */
 
-
-@media only screen and (min-width:320px) and (max-width:479px) {
-    /* Index */
-    header{
-        height: 110px;
-    }
-    nav a{
-        display: block;
-    }
-    .hero .info-content {
-        grid-column: 2/8;
-        grid-row: 2/6;
-        color: aliceblue;
-        text-align: center;
-    }
-    .hero {
-        filter: blur(0px);
-    }
-    .hero h1{
-        font-size: 2em;
-    }
-    
-    /* Herramientas */
-    .contenedor-tools .programas table{
-        width: 150px;
-        height: 100px;
-        justify-self:left;
-    }
-
-    /* Contacto */
-    .form-register {
+@media only screen and (min-width:320px) and (max-width:430px){
+    .form-register{
         width: 300px;
-        height: 680px;
     }
-    .form-register textarea {
-        width: 240px;
-        height: 150px;
-        resize: none;
+    .form-register .button{
+        width: 270px;
     }
-    .navbar .wpp {
-        width: 35px;
-        height: 35px;
-        grid-column: 4/5;
-        grid-row: 1/3;
-        justify-self: center;
+    .controls{
+        width: 270px;
     }
-    .formulario {
-        height: 100%;
+    .form-register textarea{
+        width: 250px;
     }
-    
-    /* Solicitud */
-    .contenedor-solicitud{
-        position: relative;
-        max-width: 100%;
-    }
-    .contenedor-solicitud .correo img {
-        width: 60px;
-        height: 60px;
-    }
-    .contenedor-solicitud .correo{
-        display: block;
-        text-align: center;
-    }
-    .contenedor-solicitud .idea img {
-        width: 60px;
-        height: 60px;
-    }
-    .contenedor-solicitud .idea{
-        display: block;
-        text-align: center;
-    }
-    .contenedor-solicitud .reloj img {
-        width: 60px;
-        height: 60px;
-    }
-    .contenedor-solicitud .reloj{
-        display: block;
-        text-align: center;
-    }
-    .contenedor-solicitud .entrega img {
-        width: 60px;
-        height: 60px;
-    }
-    .contenedor-solicitud .entrega{
-        display: block;
-        text-align: center;
-    }
-    .contenedor-solicitud .dinero img {
-        width: 60px;
-        height: 60px;
-    }
-    .contenedor-solicitud .dinero{
-        display: block;
-        text-align: center;
-    }
-
-    /* Info */
-    .informacion iframe {
-        width: auto;
-        height: 400px;
-    }
-    .contenedor-info {
-        height: 100%;
-    }
-}
-
-/* =================== MEDIA QUERY 480 PX =================== */
-
-@media only screen and (min-width:480px) and (max-width:599px) {
-    /* Index */
-    header{
-        height: 110px;
-    }
-    nav a{
-        display: block;
-    }
-    .hero .info-content {
-        grid-column: 2/8;
-        grid-row: 2/6;
-        color: aliceblue;
-        text-align: center;
-    }
-    .hero {
-        filter: blur(0px);
-    }
-    .hero h1{
-        font-size: 2em;
-    }
-    /* Solicitud */
-    .contenedor-solicitud{
-        position: relative;
-        max-width: 100%;
-    }
-    .contenedor-solicitud .correo img {
-        width: 60px;
-        height: 60px;
-    }
-    .contenedor-solicitud .correo{
-        display: block;
-        text-align: center;
-    }
-    .contenedor-solicitud .idea img {
-        width: 60px;
-        height: 60px;
-    }
-    .contenedor-solicitud .idea{
-        display: block;
-        text-align: center;
-    }
-    .contenedor-solicitud .reloj img {
-        width: 60px;
-        height: 60px;
-    }
-    .contenedor-solicitud .reloj{
-        display: block;
-        text-align: center;
-    }
-    .contenedor-solicitud .entrega img {
-        width: 60px;
-        height: 60px;
-    }
-    .contenedor-solicitud .entrega{
-        display: block;
-        text-align: center;
-    }
-    .contenedor-solicitud .dinero img {
-        width: 60px;
-        height: 60px;
-    }
-    .contenedor-solicitud .dinero{
-        display: block;
-        text-align: center;
-    }
-
-
-    /* Contacto */
-    .form-register textarea {
-        width: 340px;
-        height: 150px;
-        resize: none;
-    }
-    .navbar .wpp {
-        width: 25px;
-        height: 25px;
-        grid-column: 5/6;
-        grid-row: 1/3;
-        justify-self: center;
-    }
-    .formulario {
-        height: 100%;
-    }
-    
-    /* Info */
-    .informacion iframe {
-        width: auto;
-        height: 400px;
-    }
-    .contenedor-info {
-        height: 100%;
-    }
-}
-
-/* =================== MEDIA QUERY 600 PX =================== */
-
-@media only screen and (min-width:600px) and (max-width:767px) {
-    nav a{
-        padding: 4px;
-    }
-    .hero .info-content {
-        grid-column: 3/8;
-        grid-row: 2/6;
-        color: aliceblue;
-        text-align: center;
-    }
-    .hero {
-        filter: blur(0px);
-    }
-    .hero h1{
-        font-size: 2em;
-    }
-
-    /* Contacto */
-    .form-register textarea {
-        width: 340px;
-        height: 150px;
-        resize: none;
-    }
-    
-    /* Info */
-    .contenedor-info {
-        height: 100%;
-    }
-}
-
-/* =================== MEDIA QUERY 768 PX =================== */
-
-@media only screen and (min-width:768px) and (max-width:1023px) {
-    
-    .hero .info-content {
-        grid-column: 7/10;
-        grid-row: 2/6;
-        color: aliceblue;
-        text-align: center;
-    }
-    .hero {
-        filter: blur(0px);
-    }
-    .hero h1{
-        font-size: 2em;
-    }
-
-    /* Contacto */
-    .form-register textarea {
-        width: 340px;
-        height: 150px;
-        resize: none;
-    }
-    .navbar .wpp {
-        width: 35px;
-        height: 35px;
-        grid-column: 4/5;
-        justify-self: center;
-    }
-
-    /* Info */
-    .contenedor-info {
-        height: 100%;
-    }
-}
-
-/* =================== MEDIA QUERY 1280x720 =================== */
-
-@media only screen and (width:1280px) and (height:720px) {
-    
-    .hero .info-content {
-        grid-column: 7/10;
-        grid-row: 2/6;
-        color: aliceblue;
-        text-align: center;
-    }
-    .hero h1{
-        font-size: 2em;
-    }
-
-    /* Contacto */
-    .form-register textarea {
-        width: 340px;
-        height: 150px;
-        resize: none;
-    }
-    .formulario {
-        height: 100vh;
-        max-width: 100%;
-        display: grid;
-    }
-    .wpp {
-        width: 35px;
-        height: 35px;
-        grid-column: 4/5;
-        justify-self: center;
-    }
-
-    /* Info */
-    .contenedor-info {
-        display: grid;
-        max-width: 100%;
-        height: 100%;
-    }
-
-}
-
-/* =================== MEDIA QUERY +1024 =================== */
-
-@media only screen and (min-width:1024px) {
-    
-    .hero .info-content {
-        grid-column: 7/10;
-        grid-row: 2/6;
-        color: aliceblue;
-        text-align: center;
-    }
-    .hero h1{
-        font-size: 2em;
-    }
-
-    /* Contacto */
-    .form-register textarea {
-        width: 340px;
-        height: 150px;
-        resize: none;
-    }
-    .formulario {
-        height: 100vh;
-        max-width: 100%;
-        display: grid;
-    }
-    .wpp {
-        width: 35px;
-        height: 35px;
-        grid-column: 4/5;
-        justify-self: center;
-    }
-
-    /* Info */
-    .contenedor-info {
-        display: grid;
-        max-width: 100%;
-        height: 100%;
-    }
-
 }

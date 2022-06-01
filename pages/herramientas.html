@@ -1,54 +1,159 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../estilos.css">
     <link rel="icon" href="../images/LR.ico">
     <title>Herramientas de trabajo</title>
 </head>
+
 <body>
     <header>
-        <div class="logo">
-            <img src="../images/LR.png" alt="logo">
-        </div>
-        <nav class="nav">
-            <a href="../index.html" class="nav-link">INICIO</a>
-            <a href="#" class="nav-link">HERRAMIENTAS</a>
-            <a href="solicitud.html" class="nav-link">SOLICITUD</a>
-            <a href="info.html" class="nav-link">INFO</a>
-            <a href="contacto.html" class="nav-link">CONTACTO</a>
+        <!-- Navbar - Inicio -->
+        <nav class="navbar navbar-expand-md fondo-nav navbar-dark">
+            <!-- Brand -->
+            <a class="navbar-brand" href="#"><img src="../images/LR.png" alt="logo"></a>
+
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">INICIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">HERRAMIENTAS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="solicitud.html">SOLICITUD</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="info.html">INFO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">CONTACTO</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
-        <a class="wpp" href="https://wa.me/+59894417048"><img class="wpp" src="../images/whatsapp.png"></a>  
+        <!-- Navbar - Fin -->
     </header>
-    <main class="contenedor-tools">
-        <h2>PROGRAMAS CON LOS QUE TRABAJO</h2>
-        <section class="programas"> 
-            <table border="10" cellspacing="10" cellpadding="10">
-                <tr> 
-                    <th>Visual Studio Code</th>
-                    <th>Brackets</th>
-                    <th>Balsamiq Mockups</th>
-                </tr>
-                <tr>
-                    <td><img src="../images/VisualStudioLogo.png" width="100px" height="100px"></td>
-                    <td><img src="../images/Brackets.png" width="100px" height="100px"></td>
-                    <td><img src="../images/Balsamiq.png" width="100px" height="100px"></td>
-                </tr>
-            </table>
-        </section>
-        <h3>LENGUAJES QUE USO</h3>
-        <nav class="lenguajes">
-            <ul type="square">
-                <li>HTML 5</li>
-                <li>JS</li>
-                <li>CSS</li>
-            </ul>
-        </nav>
-    </main>  
-    <footer>        
-            Derechos reservados por Lucas Rodriguez®
+    <main>
+        <div class="container-fluid programas">
+            <h2 class="programas-h2">HERRAMIENTAS DE TRABAJO</h2>
+            <div class="row rowprog">               
+                <div class="card col-md-4 col-lg-3">
+                    <img class="card-img-top" src="../images/Brackets.png" alt="Card image">
+                    <div class="card-body text-center">
+                        <h4 class="card-title">Brackets</h4>
+                        <p class="card-text2">Brackets es un editor de código fuente con un enfoque principal en el desarrollo web. Creado por Adobe Inc., es un software gratuito y de código abierto con licencia MIT License, y actualmente los desarrolladores de código abierto lo mantienen en GitHub.</p>
+                        <a href="https://brackets.io/" class="btn btn-primary">Ver mas</a>
+                    </div>
+                </div>
+                <div class="card col-md-4 col-lg-3">
+                    <img class="card-img-top" src="../images/Balsamiq.png" alt="Card image">
+                    <div class="card-body text-center">
+                        <h4 class="card-title">Balsamiq Mockups</h4>
+                        <p class="card-text1">Balsamiq Wireframes es una herramienta de diseño de interfaz de usuario para crear estructuras alámbricas (también llamadas maquetas o prototipos de baja fidelidad). Este reproduce la experiencia de dibujar en un bloc de notas o pizarra, pero usando una computadora.</p>
+                        <a href="https://balsamiq.com/wireframes/" class="btn btn-primary">Ver mas</a>
+                    </div>
+                </div>
+                <div class="card col-md-4 col-lg-3">
+                    <img class="card-img-top" src="../images/VisualStudioLogo.png" alt="Card image">
+                    <div class="card-body text-center">
+                        <h4 class="card-title">Visual Studio Code</h4>
+                        <p class="card-text3">Es un editor de código fuente independiente que se ejecuta en Windows, macOS y Linux. La elección principal para desarrolladores web y JavaScript, con una gran cantidad de extensiones para admitir casi cualquier lenguaje de programación.</p>
+                        <a href="https://code.visualstudio.com/" class="btn btn-primary">Ver mas</a>
+                    </div>
+                </div>
+            </div>
+            <h2 class="programas-h3">LENGUAJES QUE UTILIZO</h2>
+            <div class="row rowprog">               
+                <div class="card col-md-4 col-lg-3">
+                    <img class="card-img-top" src="../images/html5.png" alt="Card image">
+                    <div class="card-body text-center">
+                        <h4 class="card-title">HTML 5</h4>
+                        <p class="card-text">HTML5 es un estándar que sirve como referencia del software que conecta con la elaboración de páginas web en sus diferentes versiones, define una estructura básica y un código (denominado HTML) para la definición de contenido de una página web</p>
+                        <a href="https://brackets.io/" class="btn btn-primary">Ver mas</a>
+                    </div>
+                </div>
+                <div class="card col-md-4 col-lg-3">
+                    <img class="card-img-top" src="../images/CSS3.png" alt="Card image">
+                    <div class="card-body text-center">
+                        <h4 class="card-title">CSS3</h4>
+                        <p class="card-text">CSS es un lenguaje de diseño gráfico que permite definir y crear la presentación de un documento estructurado escrito en un lenguaje de marcado. Es muy usado para establecer el diseño visual de los documentos web e interfaces de usuario escritas en HTML.</p>
+                        <a href="https://balsamiq.com/wireframes/" class="btn btn-primary">Ver mas</a>
+                    </div>
+                </div>
+                <div class="card col-md-4 col-lg-3">
+                    <img class="card-img-top" src="../images/JavaScript.png" alt="Card image">
+                    <div class="card-body text-center">
+                        <h4 class="card-title">JavaScript</h4>
+                        <p class="card-text">JavaScript es el lenguaje de programación que debes usar para añadir características interactivas a tu sitio web, (por ejemplo, juegos, eventos que ocurren cuando los botones son presionados o los datos son introducidos en los formularios, efectos de estilo dinámicos, animación, y mucho más).</p>
+                        <a href="https://code.visualstudio.com/" class="btn btn-primary">Ver mas</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+    <footer class="bg-dark text-center text-white">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+                <!-- Facebook -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-facebook-f"></i></a>
+
+                <!-- Instagram -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-instagram"></i></a>
+
+                <!-- Linkedin -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-linkedin-in"></i></a>
+
+                <!-- Github -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-github"></i></a>
+            </section>
+            <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2022 Copyright | Lucas Rodriguez
+        </div>
+        <!-- Copyright -->
     </footer>
+
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+        integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous">
+    </script>
+    <!-- Bootstrap -->
 </body>
+
 </html>

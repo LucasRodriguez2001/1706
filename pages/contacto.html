@@ -4,25 +4,80 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../estilos.css">
     <link rel="icon" href="../images/LR.ico">
     <title>Contacto</title>
 </head>
 <body>
     <header>
-        <div class="logo">
-            <img src="../images/LR.png" alt="logo">
-        </div>
-        <nav class="nav">
-            <a href="../index.html" class="nav-link">INICIO</a>
-            <a href="herramientas.html" class="nav-link">HERRAMIENTAS</a>
-            <a href="solicitud.html" class="nav-link">SOLICITUD</a>
-            <a href="info.html" class="nav-link">INFO</a>
-            <a href="#" class="nav-link">CONTACTO</a>
-        </nav>
-        <a class="wpp" href="https://wa.me/+59894417048"><img class="wpp" src="../images/whatsapp.png"></a>
+        <!-- Navbar - Inicio -->
+            <nav class="navbar navbar-expand-md fondo-nav navbar-dark">
+                <!-- Brand -->
+                <a class="navbar-brand" href="#"><img src="../images/LR.png" alt="logo"></a>
+    
+                <!-- Toggler/collapsibe Button -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <!-- Navbar links -->
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="herramientas.html">HERRAMIENTAS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="solicitud.html">SOLICITUD</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="info.html">INFO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">CONTACTO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="wpp" href="https://wa.me/+59894417048"><img class="wpp" src="../images/whatsapp.png"></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        <!-- Navbar - Fin -->
     </header>
-    <main class="formulario">
+    <main>
+        <div class="container-fluid formulario">
+            <div class="form-register col-lg-6">
+                <div class="row">
+                    <form action="enviar.php" method="post" enctype="text/plain">
+                        <h4>CONTACTAME</h4>
+                        <input class="controls" type="text" name="nombre" id="nombre" placeholder="Ingresa tu nombre" required>
+                        <input class="controls" type="text" name="apellido" id="apellido" placeholder="Ingresa tu apellido" required>
+                        <input class="controls" type="number" name="telefono" id="telefono" placeholder="Ingresa tu telefono">
+                        <input class="controls" type="email" name="email" id="email" placeholder="Ingresa tu email" required>
+                    
+                        <label for="">Masculino</label>
+                        <input class="radio" type="radio" name="sexo"><br>
+                        <label for="">Femenino</label>
+                        <input class="radio" type="radio" name="sexo"><br>
+                        <label for="">Otro</label>
+                        <input class="radio" type="radio" name="sexo"><br><br>
+                    
+                        <label for="">Comentarios</label><br>
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Escribe tu comentario"></textarea><br>
+                        <input class="check" type="checkbox" name="terminos" required>
+                        <label for="">Acepto los terminos y condiciones...</label><br>
+                        <input class="button" type="submit" value="Enviar">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- <main class="formulario">
         <section class="form-register">
             <form action="enviar.php" method="post" enctype="text/plain">
                 <h4>CONTACTAME</h4>
@@ -45,9 +100,54 @@
                 <input class="button" type="submit" value="Enviar">
             </form>
         </section>
-    </main>          
-    <footer>        
-            Derechos reservados por Lucas Rodriguez®
-    </footer>
+    </main>           -->
+    <footer class="bg-dark text-center text-white">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+          <!-- Section: Social media -->
+          <section class="mb-4">
+            <!-- Facebook -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+      
+            <!-- Instagram -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+              ><i class="fab fa-instagram"></i
+            ></a>
+      
+            <!-- Linkedin -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+      
+            <!-- Github -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+              ><i class="fab fa-github"></i
+            ></a>
+          </section>
+          <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+      
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2022 Copyright | Lucas Rodriguez
+        </div>
+        <!-- Copyright -->
+      </footer>
+
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+        integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous">
+    </script>
+    <!-- Bootstrap -->
 </body>
 </html>
