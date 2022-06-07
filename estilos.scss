@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@200&family=Montserrat:wght@100;300;500;900&family=Roboto:wght@100;300;500;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+$color1: #120907;
+$color2: #231e2f;
+$color3: #5c5a79;
+$color4: #999cd2;
+$color5: #d8deed;
+$color6: #efb810;
+$color7: #000;
+$color8: #232634;
+$color9: #ffffff;
+$color10: #1f53c5;
+$color11: #1a1a1a;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: $color5;
+    background-size: cover;
+}
+/* =================== INDEX =================== */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    padding-bottom: 45px;
+}
+.fondo-nav{
+    background-color: $color1;
+}
+.navbar img{
+    width: 50px;
+    height: 50px;
+    transition: all 0.7s;
+}
+.navbar img:hover{
+    transition: all 0.7s;
+    width: 53px;
+    height: 53px;
+}
+#collapsibleNavbar{
+    justify-content: center;
+
+    .nav-link{
+        transition: all 0.7s;
+    }
+    .wpp{
+        height: 35px;
+        width: 35px;
+        margin-left: 60px;
+    }
+}
+#collapsibleNavbar .nav-link:hover{
+    transition: all 0.7s;
+    font-size: 17px;
+    color: $color6;
+}
+.index{
+    background-image: url(images/imagen.jpg);
+    background-size: cover;
+    height: 90vh;
+}
+.iright{
+    margin-top: 150px;
+    color: $color5;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+
+    h1{
+        font-weight: 500;
+    }
+    h3{
+        font-weight: 300;
+        font-size: 22px;
+    }
+}
+
+/* =================== HERRAMIENTAS =================== */
+.programas-h2{
+    font-family: 'Montserrat', sans-serif;
+    text-shadow: 1px 1px 5px $color7;
+    text-align: center;
+}
+.programas-h3{
+    font-family: 'Montserrat', sans-serif;
+    text-shadow: 1px 1px 5px $color7;
+    text-align: center;
+}
+.card{
+    margin: 10px 10px 10px 10px;
+    max-height: 330px;
+    max-width: 400px;
+    align-items: center;
+    box-shadow: 2px 2px 5px $color7;
+    overflow: hidden;
+    transition: all 0.7s;
+}
+.card:hover{
+    max-height: 700px;
+    max-width: 400px;
+    transition: all 0.7s;
+}
+.programas{
+    background-color: $color5;
+    width: 100%;
+    min-height: 90vh;
+    max-height: 2600px;
+}
+.rowprog{
+    justify-content: center;
+}
+.card-img-top{
+    height: 270px;
+    width: 270px;
+}
+
+/* =================== SOLICITUD =================== */
+
+.tuto {
+    background-color: $color4;
+    text-align: center;
+}
+.correo{
+    border-bottom: 2px solid $color7;
+    text-align: center;
+}
+.cleft img{
+    width: 300px;
+    height: 300px;
+}
+.cright{
+    padding: 10px 20px 10px 10px;
+    align-self: center;
+}
+.idea{
+    border-bottom: 2px solid $color7;
+    text-align: center;
+}
+.idleft img{
+    width: 300px;
+    height: 300px;
+}
+.idright{
+    padding: 10px 20px 10px 10px;
+    align-self: center;
+}
+.reloj{
+    border-bottom: 2px solid $color7;
+    text-align: center;
+}
+.rleft img{
+    width: 300px;
+    height: 300px;
+}
+.rright{
+    padding: 10px 20px 10px 10px;
+    align-self: center;
+}
+.entrega{
+    border-bottom: 2px solid $color7;
+    text-align: center;
+}
+.eleft img{
+    width: 300px;
+    height: 300px;
+}
+.eright{
+    padding: 10px 20px 10px 10px;
+    align-self: center;
+}
+.dinero{
+    text-align: center;
+}
+.dleft img{
+    width: 300px;
+    height: 300px;
+}
+.dright{
+    padding: 10px 20px 10px 10px;
+    align-self: center;
+}
+
+/* =================== INFO =================== */
+#foto{
+    border-style: solid;
+    border-radius: 10px;
+    border-color: $color2;
+    width: 200px;
+    height: 260px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    box-shadow: 7px 13px 37px $color7;
+}
+.info{
+    min-height: 90vh;
+}
+.row-imagen{
+    text-align: center;
+}
+.row-datos{
+    text-align: center;
+}
+.row-location{
+    text-align: center;
+
+    iframe {
+        border-radius: 30px;
+        border-style: solid;
+        border-color: $color7;
+        box-shadow: 7px 13px 20px $color7;
+        margin-bottom: 15px;
+        max-width: 100%;
+        width: 500px;
+        height: 400px;
+    }
+}
+
+.button {
+    cursor: pointer;
+}
+
+/* =================== CONTACTO =================== */
+
+.formulario {
+    height: 800px;
+    max-width: 100%;
+    min-height: 90vh;
+    background-color: $color5;
+}
+
+.form-register{
+    width: 400px;
+    height: 770px;
+    background-color: $color8;
+    padding: 10px 30px 10px 30px;
+    margin: auto;
+    border-radius: 25px;
+    font-family: 'Roboto', sans-serif;
+    color: $color9;
+    box-shadow: 7px 13px 37px $color7;
+    margin-top: 20px;
+
+    label{
+        font-family: 'Roboto', sans-serif;
+        font-style: initial;
+        color: $color9;
+        padding: 2px;
+    }
+    .button{
+        width: 100%;
+        background: $color10;
+        border: none;
+        padding: 12px;
+        color: $color9;
+        margin: 16px 0;
+        font-size: 16px;
+    }
+    h4{
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+    textarea {
+        width: 340px;
+        height: 150px;
+        resize: none;
+    }
+}
+
+.controls{
+    width: 100%;
+    background: $color11;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid $color10;
+    font-family: 'Roboto', sans-serif;
+    color: $color9;
+    font-size: 18px;
+}
+
+/* =================== FOOTER =================== */
+
+footer{
+    position: absolute;
+    width: 100%;
+}
+/* =================== MEDIA QUERY <320 PX =================== */
+
+@media only screen and (min-width:0px) and (max-width:319px){
+body{
+    display: none;
+}  
+}
+
+/* =================== MEDIA QUERY 430 PX =================== */
+
+@media only screen and (min-width:320px) and (max-width:430px){
+    .form-register{
+        width: 300px;
+
+        .button{
+            width: 270px;
+        }
+        textarea{
+            width: 250px;
+        }
+    }
+    .controls{
+        width: 270px;
+    }
+}
