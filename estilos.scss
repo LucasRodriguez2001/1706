@@ -1,26 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@200&family=Montserrat:wght@100;300;500;900&family=Roboto:wght@100;300;500;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-$color1: #120907;
-$color2: #231e2f;
-$color3: #5c5a79;
-$color4: #999cd2;
-$color5: #d8deed;
-$color6: #efb810;
-$color7: #000;
-$color8: #232634;
-$color9: #ffffff;
-$color10: #1f53c5;
-$color11: #1a1a1a;
+$colores: (
+    color1: #120907,
+    color2: #231e2f,
+    color3: #5c5a79,
+    color4: #999cd2,
+    color5: #d8deed,
+    color6: #efb810,
+    color7: #000,
+    color8: #232634,
+    color9: #ffffff,
+    color10: #1f53c5,
+    color11: #1a1a1a);
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    background-color: $color5;
+
+body {
+    background-color: map-get($colores, color5);
     background-size: cover;
 }
+
 /* =================== INDEX =================== */
 
 body {
@@ -28,94 +31,109 @@ body {
     position: relative;
     padding-bottom: 45px;
 }
-.fondo-nav{
-    background-color: $color1;
+
+.fondo-nav {
+    background-color: map-get($colores, color1);
 }
-.navbar img{
+
+.navbar img {
     width: 50px;
     height: 50px;
     transition: all 0.7s;
 
-    &:hover{
+    &:hover {
         transition: all 0.7s;
         width: 53px;
         height: 53px;
     }
 }
-#collapsibleNavbar{
+
+#collapsibleNavbar {
     justify-content: center;
 
-    .nav-link{
+    .nav-link {
         transition: all 0.7s;
 
-        &:hover{
+        &:hover {
             transition: all 0.7s;
             font-size: 17px;
-            color: $color6;
+            color: map-get($colores, color6);
         }
     }
-    .wpp{
+
+    .wpp {
         height: 35px;
         width: 35px;
         margin-left: 60px;
     }
 }
-.index{
+
+.index {
     background-image: url(images/imagen.jpg);
     background-size: cover;
     height: 90vh;
 }
-.iright{
+
+.iright {
     margin-top: 150px;
-    color: $color5;
+    color: map-get($colores, color5);
     font-family: 'Montserrat', sans-serif;
     text-align: center;
 
-    h1{
+    h1 {
         font-weight: 500;
     }
-    h3{
+
+    h3 {
         font-weight: 300;
         font-size: 22px;
     }
 }
 
-/* =================== HERRAMIENTAS =================== */
-.programas-h2{
+/* =================== HABILIDADES =================== */
+.habilidades {
     font-family: 'Montserrat', sans-serif;
-    text-shadow: 1px 1px 5px $color7;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.programas-h2 {
+    font-family: 'Montserrat', sans-serif;
     text-align: center;
 }
-.programas-h3{
-    font-family: 'Montserrat', sans-serif;
-    text-shadow: 1px 1px 5px $color7;
-    text-align: center;
+
+.programas-h3 {
+    @extend .programas-h2;
 }
-.card{
+
+.card {
     margin: 10px 10px 10px 10px;
     max-height: 330px;
     max-width: 400px;
     align-items: center;
-    box-shadow: 2px 2px 5px $color7;
+    box-shadow: 2px 2px 5px map-get($colores, color7);
     overflow: hidden;
     transition: all 0.7s;
 
-    &:hover{
+    &:hover {
         max-height: 700px;
         max-width: 400px;
         transition: all 0.7s;
     }
 }
-.programas{
-    background-color: $color5;
+
+.programas {
+    background-color: map-get($colores, color5);
     width: 100%;
     min-height: 90vh;
-    max-height: 2600px;
+    max-height: 2700px;
 }
-.rowprog{
+
+.rowprog {
     justify-content: center;
 }
-.card-img-top{
+
+.card-img-top {
     height: 270px;
     width: 270px;
 }
@@ -123,97 +141,109 @@ body {
 /* =================== SOLICITUD =================== */
 
 .tuto {
-    background-color: $color4;
+    background-color: map-get($colores, color4);
     text-align: center;
 }
-.correo{
-    border-bottom: 2px solid $color7;
+
+.correo {
+    border-bottom: 2px solid map-get($colores, color7);
     text-align: center;
 }
-.cleft img{
-    width: 300px;
-    height: 300px;
+
+@mixin sizes($height, $width) {
+    height: $height;
+    width: $width;
 }
-.cright{
-    padding: 10px 20px 10px 10px;
-    align-self: center;
+
+.cleft img {
+    @include sizes(300px, 300px)
 }
-.idea{
-    border-bottom: 2px solid $color7;
-    text-align: center;
-}
-.idleft img{
-    width: 300px;
-    height: 300px;
-}
-.idright{
-    padding: 10px 20px 10px 10px;
-    align-self: center;
-}
-.reloj{
-    border-bottom: 2px solid $color7;
-    text-align: center;
-}
-.rleft img{
-    width: 300px;
-    height: 300px;
-}
-.rright{
-    padding: 10px 20px 10px 10px;
-    align-self: center;
-}
-.entrega{
-    border-bottom: 2px solid $color7;
-    text-align: center;
-}
-.eleft img{
-    width: 300px;
-    height: 300px;
-}
-.eright{
-    padding: 10px 20px 10px 10px;
-    align-self: center;
-}
-.dinero{
-    text-align: center;
-}
-.dleft img{
-    width: 300px;
-    height: 300px;
-}
-.dright{
+
+.cright {
     padding: 10px 20px 10px 10px;
     align-self: center;
 }
 
+.idea {
+    @extend .correo;
+}
+
+.idleft img {
+    @include sizes(300px, 300px)
+}
+
+.idright {
+    @extend .cright;
+}
+
+.reloj {
+    @extend .correo;
+}
+
+.rleft img {
+    @include sizes(300px, 300px)
+}
+
+.rright {
+    @extend .cright;
+}
+
+.entrega {
+    @extend .correo;
+}
+
+.eleft img {
+    @include sizes(300px, 300px)
+}
+
+.eright {
+    @extend .cright;
+}
+
+.dinero {
+    text-align: center;
+}
+
+.dleft img {
+    @include sizes(300px, 300px)
+}
+
+.dright {
+    @extend .cright;
+}
+
 /* =================== INFO =================== */
-#foto{
+#foto {
     border-style: solid;
     border-radius: 10px;
-    border-color: $color2;
+    border-color: map-get($colores, color2);
     width: 200px;
     height: 260px;
     margin-top: 15px;
     margin-bottom: 10px;
-    box-shadow: 7px 13px 37px $color7;
+    box-shadow: 7px 13px 37px map-get($colores, color7);
 }
-.info{
+
+.info {
     min-height: 90vh;
 }
-.row-imagen{
+
+.row-imagen {
     text-align: center;
 }
-.row-datos{
+
+.row-datos {
     text-align: center;
 }
-.row-location{
+
+.row-location {
     text-align: center;
 
     iframe {
         border-radius: 30px;
         border-style: solid;
-        border-color: $color7;
-        box-shadow: 7px 13px 20px $color7;
+        border-color: map-get($colores, color7);
+        box-shadow: 7px 13px 20px map-get($colores, color7);
         margin-bottom: 15px;
         max-width: 100%;
         width: 500px;
@@ -231,40 +261,43 @@ body {
     height: 800px;
     max-width: 100%;
     min-height: 90vh;
-    background-color: $color5;
+    background-color: map-get($colores, color5);
 }
 
-.form-register{
+.form-register {
     width: 400px;
     height: 770px;
-    background-color: $color8;
+    background-color: map-get($colores, color8);
     padding: 10px 30px 10px 30px;
     margin: auto;
     border-radius: 25px;
     font-family: 'Roboto', sans-serif;
-    color: $color9;
-    box-shadow: 7px 13px 37px $color7;
+    color: map-get($colores, color9);
+    box-shadow: 7px 13px 37px map-get($colores, color7);
     margin-top: 20px;
 
-    label{
+    label {
         font-family: 'Roboto', sans-serif;
         font-style: initial;
-        color: $color9;
+        color: map-get($colores, color9);
         padding: 2px;
     }
-    .button{
+
+    .button {
         width: 100%;
-        background: $color10;
+        background: map-get($colores, color10);
         border: none;
         padding: 12px;
-        color: $color9;
+        color: map-get($colores, color9);
         margin: 16px 0;
         font-size: 16px;
     }
-    h4{
+
+    h4 {
         font-size: 22px;
         margin-bottom: 20px;
     }
+
     textarea {
         width: 340px;
         height: 150px;
@@ -272,46 +305,49 @@ body {
     }
 }
 
-.controls{
+.controls {
     width: 100%;
-    background: $color11;
+    background: map-get($colores, color11);
     padding: 10px;
     border-radius: 4px;
     margin-bottom: 16px;
-    border: 1px solid $color10;
+    border: 1px solid map-get($colores, color10);
     font-family: 'Roboto', sans-serif;
-    color: $color9;
+    color: map-get($colores, color9);
     font-size: 18px;
 }
 
 /* =================== FOOTER =================== */
 
-footer{
+footer {
     position: absolute;
     width: 100%;
 }
+
 /* =================== MEDIA QUERY <320 PX =================== */
 
-@media only screen and (min-width:0px) and (max-width:319px){
-body{
-    display: none;
-}  
+@media only screen and (min-width:0px) and (max-width:319px) {
+    body {
+        display: none;
+    }
 }
 
 /* =================== MEDIA QUERY 430 PX =================== */
 
-@media only screen and (min-width:320px) and (max-width:430px){
-    .form-register{
+@media only screen and (min-width:320px) and (max-width:430px) {
+    .form-register {
         width: 300px;
 
-        .button{
+        .button {
             width: 270px;
         }
-        textarea{
+
+        textarea {
             width: 250px;
         }
     }
-    .controls{
+
+    .controls {
         width: 270px;
     }
 }

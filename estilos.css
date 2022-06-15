@@ -3,8 +3,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -14,7 +13,7 @@ body {
 
 /* =================== INDEX =================== */
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   position: relative;
   padding-bottom: 45px;
 }
@@ -26,35 +25,25 @@ body {
 .navbar img {
   width: 50px;
   height: 50px;
-  -webkit-transition: all 0.7s;
   transition: all 0.7s;
 }
-
 .navbar img:hover {
-  -webkit-transition: all 0.7s;
   transition: all 0.7s;
   width: 53px;
   height: 53px;
 }
 
 #collapsibleNavbar {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
-
 #collapsibleNavbar .nav-link {
-  -webkit-transition: all 0.7s;
   transition: all 0.7s;
 }
-
 #collapsibleNavbar .nav-link:hover {
-  -webkit-transition: all 0.7s;
   transition: all 0.7s;
   font-size: 17px;
   color: #efb810;
 }
-
 #collapsibleNavbar .wpp {
   height: 35px;
   width: 35px;
@@ -70,29 +59,26 @@ body {
 .iright {
   margin-top: 150px;
   color: #d8deed;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   text-align: center;
 }
-
 .iright h1 {
   font-weight: 500;
 }
-
 .iright h3 {
   font-weight: 300;
   font-size: 22px;
 }
 
-/* =================== HERRAMIENTAS =================== */
-.programas-h2 {
-  font-family: 'Montserrat', sans-serif;
-  text-shadow: 1px 1px 5px #000;
+/* =================== HABILIDADES =================== */
+.habilidades {
+  font-family: "Montserrat", sans-serif;
   text-align: center;
+  padding-bottom: 20px;
 }
 
-.programas-h3 {
-  font-family: 'Montserrat', sans-serif;
-  text-shadow: 1px 1px 5px #000;
+.programas-h2, .programas-h3 {
+  font-family: "Montserrat", sans-serif;
   text-align: center;
 }
 
@@ -100,20 +86,14 @@ body {
   margin: 10px 10px 10px 10px;
   max-height: 330px;
   max-width: 400px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-shadow: 2px 2px 5px #000;
-          box-shadow: 2px 2px 5px #000;
+  align-items: center;
+  box-shadow: 2px 2px 5px #000;
   overflow: hidden;
-  -webkit-transition: all 0.7s;
   transition: all 0.7s;
 }
-
 .card:hover {
   max-height: 700px;
   max-width: 400px;
-  -webkit-transition: all 0.7s;
   transition: all 0.7s;
 }
 
@@ -121,13 +101,11 @@ body {
   background-color: #d8deed;
   width: 100%;
   min-height: 90vh;
-  max-height: 2600px;
+  max-height: 2700px;
 }
 
 .rowprog {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .card-img-top {
@@ -141,72 +119,34 @@ body {
   text-align: center;
 }
 
-.correo {
+.correo, .entrega, .reloj, .idea {
   border-bottom: 2px solid #000;
   text-align: center;
 }
 
 .cleft img {
-  width: 300px;
   height: 300px;
+  width: 300px;
 }
 
-.cright {
+.cright, .dright, .eright, .rright, .idright {
   padding: 10px 20px 10px 10px;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-}
-
-.idea {
-  border-bottom: 2px solid #000;
-  text-align: center;
+  align-self: center;
 }
 
 .idleft img {
-  width: 300px;
   height: 300px;
-}
-
-.idright {
-  padding: 10px 20px 10px 10px;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-}
-
-.reloj {
-  border-bottom: 2px solid #000;
-  text-align: center;
+  width: 300px;
 }
 
 .rleft img {
-  width: 300px;
   height: 300px;
-}
-
-.rright {
-  padding: 10px 20px 10px 10px;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-}
-
-.entrega {
-  border-bottom: 2px solid #000;
-  text-align: center;
+  width: 300px;
 }
 
 .eleft img {
-  width: 300px;
   height: 300px;
-}
-
-.eright {
-  padding: 10px 20px 10px 10px;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  width: 300px;
 }
 
 .dinero {
@@ -214,15 +154,8 @@ body {
 }
 
 .dleft img {
-  width: 300px;
   height: 300px;
-}
-
-.dright {
-  padding: 10px 20px 10px 10px;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  width: 300px;
 }
 
 /* =================== INFO =================== */
@@ -234,8 +167,7 @@ body {
   height: 260px;
   margin-top: 15px;
   margin-bottom: 10px;
-  -webkit-box-shadow: 7px 13px 37px #000;
-          box-shadow: 7px 13px 37px #000;
+  box-shadow: 7px 13px 37px #000;
 }
 
 .info {
@@ -253,13 +185,11 @@ body {
 .row-location {
   text-align: center;
 }
-
 .row-location iframe {
   border-radius: 30px;
   border-style: solid;
   border-color: #000;
-  -webkit-box-shadow: 7px 13px 20px #000;
-          box-shadow: 7px 13px 20px #000;
+  box-shadow: 7px 13px 20px #000;
   margin-bottom: 15px;
   max-width: 100%;
   width: 500px;
@@ -285,20 +215,17 @@ body {
   padding: 10px 30px 10px 30px;
   margin: auto;
   border-radius: 25px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #ffffff;
-  -webkit-box-shadow: 7px 13px 37px #000;
-          box-shadow: 7px 13px 37px #000;
+  box-shadow: 7px 13px 37px #000;
   margin-top: 20px;
 }
-
 .form-register label {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: initial;
   color: #ffffff;
   padding: 2px;
 }
-
 .form-register .button {
   width: 100%;
   background: #1f53c5;
@@ -308,12 +235,10 @@ body {
   margin: 16px 0;
   font-size: 16px;
 }
-
 .form-register h4 {
   font-size: 22px;
   margin-bottom: 20px;
 }
-
 .form-register textarea {
   width: 340px;
   height: 150px;
@@ -327,7 +252,7 @@ body {
   border-radius: 4px;
   margin-bottom: 16px;
   border: 1px solid #1f53c5;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #ffffff;
   font-size: 18px;
 }
@@ -344,7 +269,6 @@ footer {
     display: none;
   }
 }
-
 /* =================== MEDIA QUERY 430 PX =================== */
 @media only screen and (min-width: 320px) and (max-width: 430px) {
   .form-register {
@@ -360,4 +284,5 @@ footer {
     width: 270px;
   }
 }
+
 /*# sourceMappingURL=estilos.css.map */
