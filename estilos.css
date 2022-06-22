@@ -3,7 +3,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -13,7 +14,7 @@ body {
 
 /* =================== INDEX =================== */
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   position: relative;
   padding-bottom: 45px;
 }
@@ -25,25 +26,28 @@ body {
 .navbar img {
   width: 50px;
   height: 50px;
+  -webkit-transition: all 0.7s;
   transition: all 0.7s;
-}
-.navbar img:hover {
-  transition: all 0.7s;
-  width: 53px;
-  height: 53px;
 }
 
 #collapsibleNavbar {
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
+
 #collapsibleNavbar .nav-link {
+  -webkit-transition: all 0.7s;
   transition: all 0.7s;
 }
+
 #collapsibleNavbar .nav-link:hover {
+  -webkit-transition: all 0.7s;
   transition: all 0.7s;
   font-size: 17px;
   color: #efb810;
 }
+
 #collapsibleNavbar .wpp {
   height: 35px;
   width: 35px;
@@ -59,12 +63,14 @@ body {
 .iright {
   margin-top: 150px;
   color: #d8deed;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   text-align: center;
 }
+
 .iright h1 {
   font-weight: 500;
 }
+
 .iright h2 {
   font-weight: 300;
   font-size: 22px;
@@ -72,13 +78,13 @@ body {
 
 /* =================== HABILIDADES =================== */
 .habilidades {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   text-align: center;
   padding-bottom: 20px;
 }
 
 .programas-h2, .programas-h3 {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   text-align: center;
 }
 
@@ -86,14 +92,20 @@ body {
   margin: 10px 10px 10px 10px;
   max-height: 330px;
   max-width: 400px;
-  align-items: center;
-  box-shadow: 2px 2px 5px #000;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 2px 2px 5px #000;
+          box-shadow: 2px 2px 5px #000;
   overflow: hidden;
+  -webkit-transition: all 0.7s;
   transition: all 0.7s;
 }
+
 .card:hover {
   max-height: 700px;
   max-width: 400px;
+  -webkit-transition: all 0.7s;
   transition: all 0.7s;
 }
 
@@ -105,7 +117,9 @@ body {
 }
 
 .rowprog {
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .card-img-top {
@@ -119,7 +133,7 @@ body {
   text-align: center;
 }
 
-.correo, .entrega, .reloj, .idea {
+.correo, .idea, .reloj, .entrega {
   border-bottom: 2px solid #000;
   text-align: center;
 }
@@ -129,9 +143,11 @@ body {
   width: 300px;
 }
 
-.cright, .dright, .eright, .rright, .idright {
+.cright, .idright, .rright, .eright, .dright {
   padding: 10px 20px 10px 10px;
-  align-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .idleft img {
@@ -167,7 +183,8 @@ body {
   height: 260px;
   margin-top: 15px;
   margin-bottom: 10px;
-  box-shadow: 7px 13px 37px #000;
+  -webkit-box-shadow: 7px 13px 37px #000;
+          box-shadow: 7px 13px 37px #000;
 }
 
 .info {
@@ -185,11 +202,13 @@ body {
 .row-location {
   text-align: center;
 }
+
 .row-location iframe {
   border-radius: 30px;
   border-style: solid;
   border-color: #000;
-  box-shadow: 7px 13px 20px #000;
+  -webkit-box-shadow: 7px 13px 20px #000;
+          box-shadow: 7px 13px 20px #000;
   margin-bottom: 15px;
   max-width: 100%;
   width: 500px;
@@ -198,6 +217,24 @@ body {
 
 .button {
   cursor: pointer;
+}
+
+/* =================== PROYECTOS =================== */
+.proyecto__container {
+  position: relative;
+  height: 90vh;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: -50px;
+}
+
+.proyecto__container h2 {
+  padding-bottom: 30px;
+}
+
+.proyecto__container img {
+  width: 100%;
+  height: 500px;
 }
 
 /* =================== CONTACTO =================== */
@@ -215,17 +252,20 @@ body {
   padding: 10px 30px 10px 30px;
   margin: auto;
   border-radius: 25px;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: #ffffff;
-  box-shadow: 7px 13px 37px #000;
+  -webkit-box-shadow: 7px 13px 37px #000;
+          box-shadow: 7px 13px 37px #000;
   margin-top: 20px;
 }
+
 .form-register label {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: initial;
   color: #ffffff;
   padding: 2px;
 }
+
 .form-register .button {
   width: 100%;
   background: #1f53c5;
@@ -235,10 +275,12 @@ body {
   margin: 16px 0;
   font-size: 16px;
 }
+
 .form-register h4 {
   font-size: 22px;
   margin-bottom: 20px;
 }
+
 .form-register textarea {
   width: 340px;
   height: 150px;
@@ -252,7 +294,7 @@ body {
   border-radius: 4px;
   margin-bottom: 16px;
   border: 1px solid #1f53c5;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: #ffffff;
   font-size: 18px;
 }
@@ -263,12 +305,203 @@ footer {
   width: 100%;
 }
 
+/* =================== LOADER =================== */
+/* DOT */
+@-webkit-keyframes dot1 {
+  3%, 97% {
+    width: 160px;
+    height: 100px;
+    margin-top: -50px;
+    margin-left: -80px;
+  }
+  30%, 36% {
+    width: 80px;
+    height: 120px;
+    margin-top: -60px;
+    margin-left: -40px;
+  }
+  63%, 69% {
+    width: 40px;
+    height: 80px;
+    margin-top: -40px;
+    margin-left: -20px;
+  }
+}
+@keyframes dot1 {
+  3%, 97% {
+    width: 160px;
+    height: 100px;
+    margin-top: -50px;
+    margin-left: -80px;
+  }
+  30%, 36% {
+    width: 80px;
+    height: 120px;
+    margin-top: -60px;
+    margin-left: -40px;
+  }
+  63%, 69% {
+    width: 40px;
+    height: 80px;
+    margin-top: -40px;
+    margin-left: -20px;
+  }
+}
+
+@-webkit-keyframes dot2 {
+  3%, 97% {
+    width: 150px;
+    height: 90px;
+    margin-top: -45px;
+    margin-left: -75px;
+  }
+  30%, 36% {
+    width: 70px;
+    height: 96px;
+    margin-top: -48px;
+    margin-left: -35px;
+  }
+  63%, 69% {
+    width: 32px;
+    height: 60px;
+    margin-top: -30px;
+    margin-left: -16px;
+  }
+}
+
+@keyframes dot2 {
+  3%, 97% {
+    width: 150px;
+    height: 90px;
+    margin-top: -45px;
+    margin-left: -75px;
+  }
+  30%, 36% {
+    width: 70px;
+    height: 96px;
+    margin-top: -48px;
+    margin-left: -35px;
+  }
+  63%, 69% {
+    width: 32px;
+    height: 60px;
+    margin-top: -30px;
+    margin-left: -16px;
+  }
+}
+
+@-webkit-keyframes dot3 {
+  3%, 97% {
+    width: 40px;
+    height: 20px;
+    margin-top: 50px;
+    margin-left: -20px;
+  }
+  30%, 36% {
+    width: 8px;
+    height: 8px;
+    margin-top: 49px;
+    margin-left: -5px;
+    border-radius: 8px;
+  }
+  63%, 69% {
+    width: 16px;
+    height: 4px;
+    margin-top: -37px;
+    margin-left: -8px;
+    border-radius: 10px;
+  }
+}
+
+@keyframes dot3 {
+  3%, 97% {
+    width: 40px;
+    height: 20px;
+    margin-top: 50px;
+    margin-left: -20px;
+  }
+  30%, 36% {
+    width: 8px;
+    height: 8px;
+    margin-top: 49px;
+    margin-left: -5px;
+    border-radius: 8px;
+  }
+  63%, 69% {
+    width: 16px;
+    height: 4px;
+    margin-top: -37px;
+    margin-left: -8px;
+    border-radius: 10px;
+  }
+}
+
+#onload {
+  position: fixed;
+  z-index: 999999;
+  background: #120907;
+  width: 100%;
+  height: 100%;
+}
+
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: 200px;
+  margin-top: -100px;
+  margin-left: -100px;
+}
+
+.loader > .dot {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 10;
+  width: 160px;
+  height: 100px;
+  margin-top: -50px;
+  margin-left: -80px;
+  border-radius: 5px;
+  background-color: #1e3f57;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-animation: dot1 3s cubic-bezier(0.55, 0.3, 0.24, 0.99) infinite;
+          animation: dot1 3s cubic-bezier(0.55, 0.3, 0.24, 0.99) infinite;
+}
+
+.loader > .dot:nth-child(2) {
+  z-index: 11;
+  width: 150px;
+  height: 90px;
+  margin-top: -45px;
+  margin-left: -75px;
+  border-radius: 3px;
+  background-color: #3c617d;
+  -webkit-animation-name: dot2;
+          animation-name: dot2;
+}
+
+.loader > .dot:nth-child(3) {
+  z-index: 12;
+  width: 40px;
+  height: 20px;
+  margin-top: 50px;
+  margin-left: -20px;
+  border-radius: 0 0 5px 5px;
+  background-color: #6bb2cd;
+  -webkit-animation-name: dot3;
+          animation-name: dot3;
+}
+
 /* =================== MEDIA QUERY <320 PX =================== */
 @media only screen and (min-width: 0px) and (max-width: 319px) {
   body {
     display: none;
   }
 }
+
 /* =================== MEDIA QUERY 430 PX =================== */
 @media only screen and (min-width: 320px) and (max-width: 430px) {
   .form-register {
@@ -284,5 +517,4 @@ footer {
     width: 270px;
   }
 }
-
 /*# sourceMappingURL=estilos.css.map */

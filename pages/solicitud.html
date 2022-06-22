@@ -8,8 +8,9 @@
     <meta name="keywords" content="HTML, CSS, JavaScript, SASS, Node.JS, Visual Studio Code, W3Schools, Bootstrap, Git, GitHub, Live Compiler, Portfolio">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
-        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../estilos.css">
     <link rel="icon" href="../images/LR.ico">
     <title>Como solicitar un trabajo</title>
@@ -42,6 +43,9 @@
                             <a class="nav-link" href="info.html">INFO</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link" href="proyectos.html">PROYECTOS</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="contacto.html">CONTACTO</a>
                         </li>
                     </ul>
@@ -55,31 +59,31 @@
     <main>
         <!-- Pasos de solicitud - Inicio -->
         <div class="container-fluid correo">
-            <div class="row">
+            <div class="row" data-aos="fade-up">
                 <div class="cleft col-md-4"><img src="../images/correo.png"></div>
                 <div class="cright col-md-8"><p>Dirigirse a la pagina <a href="/pages/contacto.html">Contacto</a> y llenar los campos que se visualizan. En el campo de texto donde pondras la informacion debes indicarme brevemente tu consulta.</p></div>
             </div>
         </div>
         <div class="container-fluid idea">
-            <div class="row">
+            <div class="row" data-aos="fade-up">
                 <div class="idleft col-md-4"><img src="../images/idea.png"></div>
                 <div class="idright col-md-8"><p>Una vez entremos en contacto me plantearas tu idea para tu pagina web de forma detallada para asi poder cotizar y empezar con el proyecto.</p></div>
             </div>
         </div>
         <div class="container-fluid reloj">
-            <div class="row">
+            <div class="row" data-aos="fade-up">
                 <div class="rleft col-md-4"><img src="../images/reloj.png"></div>
                 <div class="rright col-md-8"><p>Luego de realizada la idea se estimara un plazo para realizar dicha pagina web poniendose de acuerdo con el comprador.</p></div>
             </div>
         </div>
         <div class="container-fluid entrega">
-            <div class="row">
+            <div class="row" data-aos="fade-up">
                 <div class="eleft col-md-4"><img src="../images/entrega.png"></div>
                 <div class="eright col-md-8"><p>Ya finalizado el plazo de entrega y el proyecto se comunicara con el comprador para realizarse la entrega del trabajo.</p></div>
             </div>
         </div>
         <div class="container-fluid dinero">
-            <div class="row">
+            <div class="row" data-aos="fade-up">
                 <div class="dleft col-md-4"><img src="../images/dinero.png"></div>
                 <div class="dright col-md-8"><p>Por ultimo, el pago final se podra hacer por transferencia bancaria o mediante PayPal.</p></div>
             </div>
@@ -134,5 +138,11 @@
         integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous">
     </script>
     <!-- Bootstrap -->
+    <!-- Fade -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- Fade -->
 </body>
 </html>
